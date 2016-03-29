@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" href="css/comm.css">
+		<link rel="stylesheet" href="css/css2.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes"/><!--隐藏safari导航栏及工具栏-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<script type="text/javascript" src="js/websrcipt.js" ></script>
+		<script type="text/javascript" src="js/hhSwipe.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/easyResponsiveTabs.js"></script>
+	</head>
+	<style>
+
+
+	</style>
+		<body onload="setHeight();" onresize=" setHeight()">
+		<div class="index-content">
+			<!--首页背景控制-->
+			<div class="index-set fotterborder">
+
+				<!-- 内页统一头部 -->
+				<div class="d-mod d-mod-menu-unfold">
+					<a class="d-mod-back" href="javascript:;"></a>
+					<div class="d-mod-input d-mod-input-wrapper">
+						<a class="d-mod-search" href="javascript:;"></a>
+						<input type="text" placeholder="世界那么大，我想去看看">
+					</div>
+					<a class="d-mod-menu" href="javascript:;"></a>
+					<div class="d-mod-menu-list" style="display: none;">
+						<a class="d-mod-menu-list-item d-mod-menu-list-item1" href="index.html">首页</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item2" href="fl-sort.html">分类</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item3" href="javascript:;">购物车</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item4" href="javascript:;">我的</a>
+					</div>
+				</div>
+
+				<!-- product detail 商品详情-->
+				<!-- product banner-->
+				<div class="d-detailbanner">
+					<div class="d-detailbox">
+						<div class="swiper-container swiper-container-horizontal">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide d-sidle">
+									<a href="#"><img src="img/largeNature1.jpg" class="swiper-lazy"></a>
+								</div>
+								<div class="swiper-slide d-sidle">
+									<a href="#"><img src="img/largeNature2.jpg" class="swiper-lazy"></a>
+								</div>
+								<div class="swiper-slide d-sidle">
+									<a href="#"><img src="img/largeNature3.jpg" class="swiper-lazy"></a>
+								</div>
+								<div class="swiper-slide d-sidle">
+									<a href="#"><img src="img/largeNature4.jpg" class="swiper-lazy"></a>
+								</div>
+								<div class="swiper-slide d-sidle">
+									<a href="#"><img src="img/largeNature5.jpg" class="swiper-lazy"></a>
+								</div>
+								<div class="swiper-slide d-sidle">
+									<a href="#"><img src="img/largeNature6.jpg" class="swiper-lazy"></a>
+								</div>
+
+
+							</div>
+							<!-- Add Pagination -->
+
+								<div class="swiper-pagination swiper-pagination-white d-btndian">
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				<!-- product productinfo-->
+				<div class="d-prifno">
+					<div class="fn-wrap">
+						<div class="wrap-title">
+							<h2>藏富珠宝 翡翠A货冰糯种太阳花手链（单条）</h2>
+							<div class="wrap-xsprice">销售价：<span class="fn-wrapprice">￥5999.00</span></div>
+							<div class="wrap-sale"><span class="fn-wrapfont">优惠</span>：<span class="wrap-miquan">可用米券</span></div>
+						</div>
+						<a  href="#" class="make-wrap">
+							<div class="make-wraptext">转发赚钱</div>
+						</a>
+						<a href="#"class="share-wrap" style="display: none">
+							<div class="make-wraptext">分享</div>
+						</a>
+					</div>
+					<div class="d-linklist">
+						<a class="item" onclick="" href="#">
+							规格
+							<span class="parameter">
+								<i>16G</i>
+								<i>白色</i>
+								<i>1件</i>
+							</span>
+							<i class="arrowent"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="details-mode">
+					<div class="d-linklist noborder">
+						<a class="item" onclick="" href="#">
+							图文详情
+							<i class="arrowent"></i>
+						</a>
+					</div>
+					<div class="d-linklist noborder">
+						<a class="item" onclick="" href="#">
+							商品参数
+							<i class="arrowent"></i>
+						</a>
+					</div>
+					<div class="d-linklist">
+						<a class="item" onclick="" href="#">
+							商品评价
+							<i class="arrowent"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="details-mode">
+					<div class="d-linklist">
+						<a class="item" onclick="" href="#">
+							威尔胜Wilson旗舰店
+							<span class="d-shop-stars">
+								<i class="d-rec-star star2"></i>
+							</span>
+							<i class="arrowent"></i>
+						</a>
+					</div>
+				</div>
+
+				<div style="display: block;" class="click-loading">
+					<a href="javascript:void(0);">继续向下加载更多</a>
+				</div>
+
+
+			</div>
+			<div class="d-shopbuybtn">
+				<div class="shop-cates"><a class="shop-sharecarts cart-num" href="#"><i>1</i></a> </div>
+				<div class="btn-cart">
+					<div class="btn-shopcarts">
+						<a href="javascript:void(0);" >加入购物车</a>
+					</div>
+					<div class="btn-conter"><a href="javascript:void(0);">立即购买</a></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 弹出框 begin -->
+	<div class="d-tab-content" id="" style="display:none;">
+		<div class="d-tab-pane active">
+			<div class="screening-box">
+				<div class="sidebar-content">
+					<div class="detail-content">
+						<p class="d-detpic">
+							<img src="img/detimg.png">
+						</p>
+						<div class="detail-caption">
+							<p class="d-captit">威尔胜Wilson全碳素网球拍 WRT5870蓝色Wilson全碳素网球拍</p>
+							<p class="d-detailpri">￥5999.00</p>
+						</div>
+					</div>
+					<div class="d-specone">
+						<h2>存储<span></span></h2>
+						<div class="d-fniert">
+							<a href="#" class="titblock activek">16G</a>
+							<a href="#" class="titblock">16G</a>
+							<a href="#" class="titblock">16G</a>
+							<a href="#" class="titblock">16G</a>
+							<a href="#" class="titblock">16G</a>
+							<a href="#" class="titblock">16G</a>
+						</div>
+					</div>
+					<div class="d-specone d-spectwo">
+						<h2>颜色<span></span></h2>
+						<div class="d-fniert">
+							<a href="#" class="titblock activek"><img src="img/smpic.png">深棕色</a>
+							<a href="#" class="titblock"><img src="img/smpic.png">浅综色</a>
+							<a href="#" class="titblock"><img src="img/smpic.png">北卡蓝</a>
+							<a href="#" class="titblock"><img src="img/smpic.png">太空灰</a>
+						</div>
+					</div>
+					<div class="d-specone d-spectwo">
+						<h2 class="numeier">数量<span></span></h2>
+						<div class="d-fniert bortop">
+							<ul class="Fix boxright">
+								<a href="javascript:void(0);" class="number-jian numbertu">–</a>
+								<input name="product_num"  value="1" class="numberinput">
+								<a href="javascript:void(0);" class="numbertu numbertip">+</a>
+
+								<span class="onejian">件</span>
+							</ul>
+						</div>
+					</div>
+
+					<div class="btn-jion d-posrtr">
+						<div class="btn-zir">
+							<a href="#">
+							加入购物车
+							</a>
+						</div>
+						<div class="btn-go"><a href="#">立即购买</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="black">
+			</div>
+		</div>
+	</div>
+	    <!-- 弹出框 end -->
+
+		<script type="text/javascript">
+			//头部banner
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				slidesPerView: 1,
+				paginationClickable: true,
+				spaceBetween: 30,
+				loop: true
+			});
+
+		</script>
+
+	</body>
+	<!-- 加入购物车弹出框 begn-->
+	<div class="d-bodybg" style="display: none;">
+		<div class="d-bodyeject d-minheight">
+			<div class="body_contr">
+				<div class="chenker">
+					<span class="correct"></span>
+					<p class="wordker">添加成功！<br><span>商品已成功加入购物车</span></p>
+
+				</div>
+				<div class="btn-jion pkvoir">
+					<div class="btn-zir"><a href="#">再逛逛</a></div>
+					<div class="btn-go"><a href="#">去结算</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 加入购物车弹出框 end-->
+</html>
+
+
+
+

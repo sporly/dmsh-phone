@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1" /><!--设置viewport，适应移动设备的显示宽度-->
+		<meta name="apple-mobile-web-app-capable" content="yes" /><!--隐藏safari导航栏及工具栏-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--所有浏览器都以最新模式显示-->
+		<title>申请退换货</title>
+		<link href="css/comm.css" rel="stylesheet" type="text/css" />
+		<link href="css/wglobal.css" rel="stylesheet" type="text/css" />
+		<link href="css/css2.css" rel="stylesheet" type="text/css" />
+		<script src='js/jquery-1.9.1.min.js' type="text/javascript"></script>
+		<script src='js/websrcipt.js' type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="mod_container">
+			<!-- 内页统一头部 S-->
+				<div class="d-mod d-mod-menu-unfold ">
+					<a class="d-mod-back" href="javascript:;"></a>
+					<div class="d-mod-input d-mod-input-wrapper">
+						<a class="d-mod-search" href="javascript:;"></a>
+						<input type="text" placeholder="世界那么大，我想去看看">
+					</div>
+					<a class="d-mod-menu" href="javascript:;"></a>
+					<div class="d-mod-menu-list" style="display: none;">
+						<a class="d-mod-menu-list-item d-mod-menu-list-item1" href="javascript:;">首页</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item2" href="javascript:;">分类</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item3" href="javascript:;">购物车</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item4" href="javascript:;">我的</a>
+					</div>
+				</div>
+			<!-- 内页统一头部 E-->
+			<!--order-detail-top 顶部信息 S-->
+			<div class="my-order-top">
+				<ul class="my-order-menu my-sqthh-menu">
+					<li><a href="#" class=" all-btn"><span>已收到货物</span></a></li>
+					<li><a href="#" class="cur click-btn1"><span>未收到货物</span></a></li>
+				</ul>
+			</div>
+			<!--顶部信息 E-->
+		<!-- order-detail-center 订单详情内容 S-->
+			<div class="mt10">
+				<!--支付成功内容 S-->
+				<div class="sqthhw-content">
+					<div class="sqthhw-content-img">
+						<img src="img/sqthh.png">
+					</div>
+					<div class="goshop-content-txt sqthh-content-txt">
+						<p class="f14 mt10">未收到货物，您可以直接取消订单，<br/>
+							或者在快递给您派送时拒绝签收！</p>
+					</div>
+
+				</div>
+				<!--支付成功内容 E-->
+
+				<!--支付成功按钮 S-->
+				<div class="tjdd-btn">
+					<div class="in-paysuc-btn clearfix">
+
+						<div class="paysuc-btn-box"><div class="in-paysuc-btn-box"><a href="" class="fr ">查看订单</a></div></div>
+						<div class="paysuc-btn-box"><div class="in-paysuc-btn-box"><a href="" class="fr b-btn-bg">回到订单列表</a></div></div>
+					</div>
+				</div>
+				<!--支付成功按钮 E-->
+			</div>
+			<!--底部物流信息 E-->
+			<!-- order-detail-center 订单详情内容 E-->
+  </div>
+		<script type="text/javascript">
+			var icon= $('.radio');
+			icon.click(function(){
+				$(this).addClass('cur');
+				$(this).parent().parent().siblings().children().children('.radio').removeClass('cur');
+			});
+		</script>
+	</body>
+</html>

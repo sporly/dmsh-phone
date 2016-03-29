@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1" /><!--设置viewport，适应移动设备的显示宽度-->
+		<meta name="apple-mobile-web-app-capable" content="yes" /><!--隐藏safari导航栏及工具栏-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--所有浏览器都以最新模式显示-->
+		<title>申请退换货</title>
+		<link href="css/comm.css" rel="stylesheet" type="text/css" />
+		<link href="css/wglobal.css" rel="stylesheet" type="text/css" />
+		<link href="css/css2.css" rel="stylesheet" type="text/css" />
+		<script src='js/jquery-1.9.1.min.js' type="text/javascript"></script>
+		<script src='js/websrcipt.js' type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="mod_container">
+			<!-- 内页统一头部 S-->
+				<div class="d-mod d-mod-menu-unfold ">
+					<a class="d-mod-back" href="javascript:;"></a>
+					<div class="d-mod-input d-mod-input-wrapper">
+						<a class="d-mod-search" href="javascript:;"></a>
+						<input type="text" placeholder="世界那么大，我想去看看">
+					</div>
+					<a class="d-mod-menu" href="javascript:;"></a>
+					<div class="d-mod-menu-list" style="display: none;">
+						<a class="d-mod-menu-list-item d-mod-menu-list-item1" href="javascript:;">首页</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item2" href="javascript:;">分类</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item3" href="javascript:;">购物车</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item4" href="javascript:;">我的</a>
+					</div>
+				</div>
+			<!-- 内页统一头部 E-->
+			<!--order-detail-top 顶部信息 S-->
+			<div class="my-order-top">
+				<ul class="my-order-menu my-sqthh-menu">
+					<li><a href="#" class="cur all-btn"><span>已收到货物</span></a></li>
+					<li><a href="#" class=" click-btn1"><span>未收到货物</span></a></li>
+				</ul>
+			</div>
+			<!--顶部信息 E-->
+		<!-- order-detail-center 订单详情内容 S-->
+			<div class="my-comment-form mt10 bt">
+				<form class="intjdd-center-content b-card-centent my-jftx-center order-detail-center" action="" method="post">
+					<div class="input-box-wrap">
+						<div class="input-box input-checkbox">
+							<div class="dm-sqthh-txt">订单编号</div>
+							<div class="in-input-box">
+								1234567890123
+							</div>
+						</div>
+					</div>
+
+					<div class="input-box-wrap">
+						<div class="input-box input-checkbox">
+							<div class="dm-sqthh-txt">申请服务</div>
+							<div class="in-input-box">
+								<a href="#" class="dm-sqthh-btn my-sqth-btn">退货</a><a href="#" class="dm-sqthh-btn my-sqhh-btn">换货</a>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="input-box-wrap">
+						<div class="input-box">
+							<label class="dm-sqthh-txt">原&nbsp;&nbsp;因</label>
+							<div class="in-input-box">
+								<select>
+									<option value ="volvo" selected = "selected">商品破损</option>
+									<option value ="saab">商品错发/漏发</option>
+									<option value="opel">商品与描述不符</option>
+									<option value="audi">商品有质量问题</option>
+									<option value="audi">其他原因</option>
+								</select>
+								<span class="jt"></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="input-box-wrap">
+						<div class="input-box">
+							<label class="dm-sqthh-txt">心&nbsp;&nbsp;得</label>
+							<div class="in-input-box">
+								<textarea  class="my-comment-text" placeholder="商品是否满意？快分享你的购买心得吧~"  maxlength="70" minlengh="10"></textarea>
+								<span class="my-comment-txtcout">10-70字</span>
+								<span class="my-comment-txtcout none">还可以输入<label>70</label>个字</span>
+							</div>
+						</div>
+						<div class="com-tip none valid-text">请填写您退换货的描述</div>
+					</div>
+
+					<div class="input-box-wrap">
+						<div class="input-box my-sqthh-input">
+							<label class="dm-sqthh-txt">上传图片</label>
+							<div class="in-input-box">
+								<div class="dm-upload-file">
+									<div id="localImag"><img id="preview" src="img/sqthhy.png" width="50" height="50" style="display: block; width: 50px; height: 50px;"></div>
+									<input title="preview" type="file" name="file" id="doc" style="width:50px;" onchange="javascript:setImagePreview(this);">
+								</div>
+
+								<div class="dm-upload-file">
+									<div id="localImag2"><img id="preview2" src="img/sqthhy.png" width="50" height="50" style="display: block; width: 50px; height: 50px;"></div>
+									<input title="preview2" type="file" name="file" id="doc2" style="width:50px;" onchange="javascript:setImagePreview(this);">
+								</div>
+
+								<div class="dm-upload-file">
+									<div id="localImag3"><img id="preview3" src="img/sqthhy.png" width="50" height="50" style="display: block; width: 50px; height: 50px;"></div>
+									<input title="preview3" type="file" name="file" id="doc3" style="width:50px;" onchange="javascript:setImagePreview(this);">
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="b-card-btn">
+						<button>
+							提交订单
+						</button>
+					</div>
+				</form>
+			</div>
+			<!--底部物流信息 E-->
+			<!-- order-detail-center 订单详情内容 E-->
+  </div>
+		<script type="text/javascript">
+
+             /*心得文本输入 S*/
+			$('.my-comment-text').focus(function(){
+				var span=$(this).parent().children('span');
+				span.eq(0).hide();
+				span.eq(1).show();
+				/*$('.combtn').removeClass('com-tip');*/
+				$('.my-comment-text').keyup(function(){
+					var byte=$(this).val().replace(/[^\x00-\xff]/g, "**").length;
+					var numBox=$(this).siblings('.my-comment-txtcout').children('label');
+					var num=Math.ceil((140-byte)/2);
+					numBox.text(num);
+					/*$('.my-comment-text').blur(function() {
+						if (length > 10) {
+							$('.com-tip').hide();
+						} else {
+							$('.com-tip').show();
+						}
+					})*/
+				})
+			})
+			/*心得文本输入 E*/
+			$("button").click(function(){
+			  var content = $(".my-comment-text").val();
+			  if(content == ''){
+			  	$('.com-tip').show();
+				/*alert("请填写您退换货的心得");*/
+				return false;
+			  }
+			});
+
+             /* 预览上传图片 S*/
+
+
+			 function setImagePreview(o) {
+				 var docObj=document.getElementById(o.id);
+				 var imgObjPreview=document.getElementById(o.title);
+				 if(docObj.files &&docObj.files[0])
+				 {
+					 //火狐下，直接设img属性
+					 imgObjPreview.style.display = 'block';
+					 imgObjPreview.style.width = '50px';
+					 imgObjPreview.style.height = '50px';
+					 //imgObjPreview.src = docObj.files[0].getAsDataURL();
+
+					 //火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式
+					 imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);
+				 }
+				 else
+				 {
+					 //IE下，使用滤镜
+					 docObj.select();
+					 var imgSrc = document.selection.createRange().text;
+					 var localImagId = document.getElementById(o.title);
+					 //必须设置初始大小
+					 localImagId.style.width = "50px";
+					 localImagId.style.height = "50px";
+					 //图片异常的捕捉，防止用户修改后缀来伪造图片
+					 try{
+						 localImagId.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+						 localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+					 }
+					 catch(e)
+					 {
+						 alert("您上传的图片格式不正确，请重新选择!");
+						 return false;
+					 }
+					 imgObjPreview.style.display = 'none';
+					 document.selection.empty();
+				 }
+				 return true;
+			 }
+
+
+			/* 预览 上传图片 E*/
+		</script>
+	</body>
+</html>

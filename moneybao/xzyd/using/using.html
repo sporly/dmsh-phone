@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />设置viewport，适应移动设备的显示宽度-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes"/><!--隐藏safari导航栏及工具栏-->
+		<meta property="qc:admins" content="13666753740606375" />
+		<meta property="wb:webmaster" content="02d1e0af77e62d70" />
+		<title>用呗</title>
+		<style type="text/css">
+			.phone_index {
+				width: 100%;
+				height: 100%;
+				height: auto;
+				display: table;
+				margin: 0 auto;
+				background: #242D32;
+			}
+			body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4{margin:0;padding:0;list-style:none;}
+			.phone_index img{
+				width:100%;
+				height:auto;
+			    float:left;
+			}
+		</style>
+	</head>
+	<body onload="setHeight();" onresize=" setHeight()">
+		<div class="phone_index" id="primary">
+			<img src="img/using1.png"/>
+	        <img src="img/using2.png"/>
+	        <img src="img/using3.png"/>
+		</div>
+		<script type="text/javascript">
+			function setHeight()
+			{
+				var max_height = document.documentElement.clientHeight;
+				var primary = document.getElementById('primary');
+				primary.style.minHeight = max_height+"px";
+				primary.style.maxHeight = max_height+"px";
+			}
+		</script>
+	</body>
+</html>

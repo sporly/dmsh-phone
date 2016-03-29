@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>主题馆详情</title>
+		<link rel="stylesheet" href="css/comm.css">
+		<link rel="stylesheet" href="css/css2.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/wglobal.css">	
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes"/><!--隐藏safari导航栏及工具栏-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<script src='js/jquery-1.9.1.min.js' type="text/javascript"></script>
+		<script type="text/javascript" src="js/websrcipt.js" ></script>
+		<script type="text/javascript" src="js/hhSwipe.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+
+		
+		<script src="js/zepto.min.js"></script>
+		<script src="js/iscroll5.min.js"></script>
+		<script src="js/fastclick.min.js"></script>
+	</head>
+	<body>
+		<div class="index-content">
+			<!--首页背景控制-->
+			<div class="index-set">
+
+				<!-- 内页统一头部 -->
+				<div class="d-mod d-mod-menu-unfold">
+					<a class="d-mod-back" href="javascript:;"></a>
+					<div class="d-mod-input d-mod-input-wrapper">
+						<a class="d-mod-search" href="javascript:;"></a>
+						<input type="text" placeholder="世界那么大，我想去看看">
+					</div>
+					<a class="d-mod-menu" href="javascript:;"></a>
+					<div class="d-mod-menu-list" style="display: none;">
+						<a class="d-mod-menu-list-item d-mod-menu-list-item1" href="index.html">首页</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item2" href="fl-sort.html">分类</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item3" href="javascript:;">购物车</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item4" href="javascript:;">我的</a>
+					</div>
+				</div>
+
+				<!-- Subject hall details 主题馆详情-->
+				<!-- banner-->
+				<div class="addWrap">
+					<div class="swipe" id="mySwipe">
+						<div class="swipe-wrap">
+							<div><a href="javascript:;"><img class="img-responsive" src="img/banner1.png"/></a></div>
+							<div><a href="javascript:;"><img class="img-responsive" src="img/banner2.png" /></a></div>
+							<div><a href="javascript:;"><img class="img-responsive" src="img/banner3.png"/></a></div>
+						</div>
+					</div>
+
+					<ul id="position">
+						<li class="cur"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<!-- Theme pavilion 主题馆-->
+				<!-- Recommended shop 推荐店铺-->
+				<div class="d-mod-tit d-mod-shop-top"><h2 class="d-pav-tit">推荐店铺</h2></div>
+				<div class="d-rec-shop d-index-dis d-index-lr">
+					<div class="swiper-container">
+						<div class="swiper-wrapper d-rec-box">
+							<div class="swiper-slide d-mod-slider-item">
+								<a href="#">
+									<div class="d-shop-info">
+										<img class="d-shop-logo" src="img/shop1.jpg">
+										<div class="d-shop-name">苏泊尔厨具专营店</div>
+										<div class="d-rec-name-credit-box">
+											<div class="d-shop-credit">店铺信誉值：<i>1200</i></div>
+											<div class="d-shop-star">店铺等级：<i class="d-rec-star star1"></i></div>
+										</div>
+
+									</div>
+									<img class="d-shop-img2" src="img/pr1.jpg">
+									<img class="d-shop-img2" src="img/pr2.jpg">
+
+								</a>
+							</div>
+							<div class="swiper-slide d-mod-slider-item">
+								<a href="#">
+									<div class="d-shop-info">
+										<img class="d-shop-logo" src="img/shop1.jpg">
+										<div class="d-shop-name">苏泊尔厨具专营店</div>
+										<div class="d-rec-name-credit-box">
+											<div class="d-shop-credit">店铺信誉值：<i>1200</i></div>
+											<div class="d-shop-star">店铺等级：<i class="d-rec-star star1"></i></div>
+										</div>
+
+									</div>
+									<img class="d-shop-img2" src="img/pr1.jpg">
+									<img class="d-shop-img2" src="img/pr2.jpg">
+
+								</a>
+							</div>
+							<div class="swiper-slide d-mod-slider-item">
+								<a href="#">
+									<div class="d-shop-info">
+										<img class="d-shop-logo" src="img/shop1.jpg">
+										<div class="d-shop-name">苏泊尔厨具专营店</div>
+										<div class="d-rec-name-credit-box">
+											<div class="d-shop-credit">店铺信誉值：<i>1200</i></div>
+											<div class="d-shop-star">店铺等级：<i class="d-rec-star star1"></i></div>
+										</div>
+
+									</div>
+									<img class="d-shop-img2" src="img/pr1.jpg">
+									<img class="d-shop-img2" src="img/pr2.jpg">
+
+								</a>
+							</div>
+							<div class="swiper-slide d-mod-slider-item">
+								<a href="#">
+									<div class="d-shop-info">
+										<img class="d-shop-logo" src="img/shop1.jpg">
+										<div class="d-shop-name">苏泊尔厨具专营店</div>
+										<div class="d-rec-name-credit-box">
+											<div class="d-shop-credit">店铺信誉值：<i>1200</i></div>
+											<div class="d-shop-star">店铺等级：<i class="d-rec-star star1"></i></div>
+										</div>
+
+									</div>
+									<img class="d-shop-img2" src="img/pr1.jpg">
+									<img class="d-shop-img2" src="img/pr2.jpg">
+
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<!-- Everyone is buying 大家都在买-->
+				<div class="d-mod-tit">
+					<h2 class="d-pav-tit">大家都在买</h2>
+				</div>
+				<!-- 滑动标题-->
+				<section class="item_list sec_list clearfix" dd_name="馆页分类区">
+					<div class="left_side" style="visibility:hidden"><span class="dm-titside"></span></div>
+					<div id="wrapper_list" class="ads_list">
+						<ul class="clearfix" style="width: 207.5rem; -webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1); -webkit-transform: translate(0px, 0px) translateZ(0px);">
+							<li><a href="java:;" title="好书榜">好书榜</a></li>
+							<li><a href="java:;" title="好书榜">好书榜</a></li>
+							<li><a href="java:;"  title="好书榜">好书榜</a></li>
+							<li><a href="java:;"  title="好书榜">好书榜</a></li>
+							<li><a href="java:;"  title="好书榜">好书榜</a></li>
+							<li><a href="java:;"  title="好书榜">好书榜</a></li>
+							<li><a href="java:;" title="好书榜">好书榜</a></li>
+							<li><a href="java:;" title="好书榜">好书榜</a></li>
+							<li><a href="java:;" title="好书榜">好书榜</a></li>
+							<li><a href="java:;" title="好书榜">好书榜</a></li>
+							<li><a href="java:;" title="好书榜">好书榜</a></li>
+							<li><a href="java:;"  title="好书榜">好书榜</a></li>
+							<li><a href="java:;"  title="好书榜">好书榜</a></li>
+							<li><a href="java:;"  title="好书榜">好书榜</a></li>
+							<li><a href="java:;"  title="好书榜">好书榜</a></li>
+							<li><a href="java:;" title="好书榜">好书榜</a></li>
+							<li><a href="java:;" title="好书榜">好书榜</a></li>
+							<li><a href="java:;" title="好书榜">好书榜</a></li>
+
+						</ul>
+					</div>
+					<div class="right_side"><span class="dm-titside dm-rtitside"></span></div>
+					
+				</section>
+
+
+				<div class="d-daming-fine d-index-dis d-ztgxq-pro">
+					<section class="d-fine-prlist">
+						<div class="d-fine-prbox">
+							<ul>
+								<li>
+									<a class="d-fine-jplist" href="#">
+										<div class="d-fine-wrapp">
+											<img class="d-fine-timg" src="img/pr03.jpg">
+										</div>
+										<div class="d-fine-info">
+											<div class="d-fine-name"><h3>台湾第一健康品牌—美行家火龍晶純瞬效面膜5片装</h3></div>
+											<div class="d-fine-price">商汇价:￥198.00</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="d-fine-jplist" href="#">
+										<div class="d-fine-wrapp">
+											<img class="d-fine-timg" src="img/pr03.jpg">
+										</div>
+										<div class="d-fine-info">
+											<div class="d-fine-name"><h3>台湾第一健康品牌—美行家火龍晶純瞬效面膜5片装</h3></div>
+											<div class="d-fine-price">商汇价:￥198.00</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+				<div style="display: block;" class="click-loading">
+					<a href="javascript:void(0);">继续向下加载更多</a>
+				</div>
+
+			</div>
+		</div>
+        <!--回到顶部--S-->
+	      <div style="display: none;" class="back-top" id="toolBackTop"> 
+	           <a title="返回顶部" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top backtop"> 
+	           </a> 
+	     </div>
+     <!--回到顶部--E-->
+		<!--首页JS-->
+		<script type="text/javascript">
+
+			//轮播
+			var bullets = document.getElementById('position').getElementsByTagName('li');
+			var banner = Swipe(document.getElementById('mySwipe'), {
+				auto: 4000,
+				continuous: true,
+				disableScroll:false,
+				callback: function(pos) {
+					var i = bullets.length;
+					while (i--) {
+						bullets[i].className = ' ';
+					}
+					bullets[pos].className = 'cur';
+				}
+			})
+
+			//推荐店铺
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				slidesPerView: 1,
+				paginationClickable: true,
+				spaceBetween: 30,
+				loop: true
+			});
+
+         //热卖滑动部分
+			(function($) {
+				var item = {
+					init: function() {
+						this.prodItemInit();
+					},
+					prodItemInit: function() {
+						setTimeout(function() {
+							var scroller = new IScroll('#wrapper_list', {
+								scrollX: true,
+								scrollY: false,
+								snap: true,
+								momentum: false,
+								click: false,
+								eventPassthrough: true,
+								preventDefault: true
+							});
+							$(".item_list .left_side").click(function() {
+								scroller.prev();
+							});
+							$(".item_list .right_side").click(function() {
+								scroller.next();
+							});
+							scroller.on('scrollEnd', function() {
+								if (this.currentPage.pageX == 0) {
+									$(".item_list .left_side").css('visibility', 'hidden');
+								} else {
+									$('.item_list .left_side').css('visibility', 'visible');
+								}
+								if (this.currentPage.pageX == Math.round($('#wrapper_list a').length / 4) - 1) {
+									$('.item_list .right_side').css('visibility', 'hidden');
+								} else {
+									$('.item_list .right_side').css('visibility', 'visible');
+								}
+							});
+						}, 0);
+					}
+				};
+				$(document).ready(function() {
+					FastClick.attach(document.body);
+					item.init();
+				})
+			})(Zepto);
+			//滑动块选中状态
+		  $('.ads_list li a').click(function(){
+			   $('.ads_list li a').removeClass('d-multipl-cur');
+			   $('.ads_list li a i').remove();
+			   $(this).addClass('d-multipl-cur');
+			   $(this).append( '<i></i>' );
+		   });
+		</script>
+	</body>
+</html>
+
+
+
+

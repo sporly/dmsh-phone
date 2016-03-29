@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品列表</title>
+		<link rel="stylesheet" href="css/comm.css">
+		<link rel="stylesheet" href="css/css2.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes"/><!--隐藏safari导航栏及工具栏-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	    <script src="js/jquery-ui.min.js"></script>
+	    <script src="js/jquery.simplesidebar.js"></script>
+		<script type="text/javascript" src="js/websrcipt.js" ></script>
+		<script type="text/javascript" src="js/hhSwipe.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="js/easyResponsiveTabs.js"></script>
+		
+	</head>
+
+	<body onload="setHeight();" onresize=" setHeight()">
+		<div class="index-content">
+			<!--首页背景控制-->
+			<div class="index-set">
+
+				<!-- 内页统一头部 -->
+				<div class="d-mod d-mod-menu-unfold">
+					<a class="d-mod-back" href="javascript:;"></a>
+					<div class="d-mod-input d-mod-input-wrapper">
+						<a class="d-mod-search" href="javascript:;"></a>
+						<input type="text" placeholder="世界那么大，我想去看看">
+					</div>
+					<a class="d-mod-menu" href="javascript:;"></a>
+					<div class="d-mod-menu-list" style="display: none;">
+						<a class="d-mod-menu-list-item d-mod-menu-list-item1" href="index.html">首页</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item2" href="fl-sort.html">分类</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item3" href="javascript:;">购物车</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item4" href="javascript:;">我的</a>
+					</div>
+				</div>
+
+				<!-- Commodity list 商品列表-->
+				<div class="d-commodity-list">
+					<!-- tab 切换-->
+					<div class="d-tab-background">
+						<div class="d-tab-title">
+							<a class="d-mod-nav-item d-mod-nav-cur" href="product-list.html">商品</a>
+							<a class="d-mod-nav-item" href="product-shop-list.html">店铺</a>
+						</div>
+					</div>
+					<!-- 排序选项-->
+					<div class="d-tab-background stick-tittle">
+						<ul class="d-product-main">
+							<li><a href="#" class="sort-btn">销量<span class="d-icon-down"></span></a></li>
+							<li><a href="#" class="sort-btn">价格<span class="d-icon-down"></span></a></li>
+							<li><a href="#" class="sort-btn">上架时间<span class="d-icon-down"></span></a></li>
+							<li><a href="#screening" class="d-icon-arrow choice toolbar" id="open-sb">筛选</a></li>
+						</ul>
+					</div>
+					<!-- 产品-->
+					<div class="d-daming-fine d-index-dis">
+						<section class="d-fine-prlist">
+							<div class="d-fine-prbox">
+								<ul>
+									<li>
+										<a class="d-fine-jplist" href="#">
+											<div class="d-fine-wrapp">
+												<img class="d-fine-timg" src="img/pr03.jpg">
+											</div>
+											<div class="d-fine-info">
+												<div class="d-fine-name"><h3>台湾第一健康品牌—美行家火龍晶純瞬效面膜5片装</h3></div>
+												<div class="d-fine-price">商汇价:￥198.00</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="d-fine-jplist" href="#">
+											<div class="d-fine-wrapp">
+												<img class="d-fine-timg" src="img/pr03.jpg">
+											</div>
+											<div class="d-fine-info">
+												<div class="d-fine-name"><h3>台湾第一健康品牌—美行家火龍晶純瞬效面膜5片装</h3></div>
+												<div class="d-fine-price">商汇价:￥198.00</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="d-fine-jplist" href="#">
+											<div class="d-fine-wrapp">
+												<img class="d-fine-timg" src="img/pr03.jpg">
+											</div>
+											<div class="d-fine-info">
+												<div class="d-fine-name"><h3>台湾第一健康品牌—美行家火龍晶純瞬效面膜5片装</h3></div>
+												<div class="d-fine-price">商汇价:￥198.00</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="d-fine-jplist" href="#">
+											<div class="d-fine-wrapp">
+												<img class="d-fine-timg" src="img/pr03.jpg">
+											</div>
+											<div class="d-fine-info">
+												<div class="d-fine-name"><h3>台湾第一健康品牌—美行家火龍晶純瞬效面膜5片装</h3></div>
+												<div class="d-fine-price">商汇价:￥198.00</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="d-fine-jplist" href="#">
+											<div class="d-fine-wrapp">
+												<img class="d-fine-timg" src="img/pr03.jpg">
+											</div>
+											<div class="d-fine-info">
+												<div class="d-fine-name"><h3>台湾第一健康品牌—美行家火龍晶純瞬效面膜5片装</h3></div>
+												<div class="d-fine-price">商汇价:￥198.00</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="d-fine-jplist" href="#">
+											<div class="d-fine-wrapp">
+												<img class="d-fine-timg" src="img/pr03.jpg">
+											</div>
+											<div class="d-fine-info">
+												<div class="d-fine-name"><h3>台湾第一健康品牌—美行家火龍晶純瞬效面膜5片装</h3></div>
+												<div class="d-fine-price">商汇价:￥198.00</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="d-fine-jplist" href="#">
+											<div class="d-fine-wrapp">
+												<img class="d-fine-timg" src="img/pr03.jpg">
+											</div>
+											<div class="d-fine-info">
+												<div class="d-fine-name"><h3>台湾第一健康品牌—美行家火龍晶純瞬效面膜5片装</h3></div>
+												<div class="d-fine-price">商汇价:￥198.00</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="d-fine-jplist" href="#">
+											<div class="d-fine-wrapp">
+												<img class="d-fine-timg" src="img/pr03.jpg">
+											</div>
+											<div class="d-fine-info">
+												<div class="d-fine-name"><h3>台湾第一健康品牌—美行家火龍晶純瞬效面膜5片装</h3></div>
+												<div class="d-fine-price">商汇价:￥198.00</div>
+											</div>
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</section>
+					</div>
+					<div style="display: block;" class="click-loading">
+						<a href="javascript:void(0);">继续向下加载更多</a>
+					</div>
+
+				</div>
+
+
+
+			</div>
+		</div>
+        <!--回到顶部--S-->
+              <div style="display: none;" class="back-top" id="toolBackTop"> 
+                   <a title="返回顶部" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top backtop"> 
+                   </a> 
+             </div>
+             <!--回到顶部--E-->
+		<!--  筛选滑动切入 S-->
+<div class="wrapper" >
+ 	<div class="body_bg">
+	</div>
+	<section class="sidebar" style="">
+		<nav>
+			<div class="list" >
+		    	    
+			    	  <div class="d-sidebar-container d-sidebar-container_p">
+			    	  	     
+			    	  		 <div class="d-sidebar-main">
+								<div class="sidebar-header">
+									<a class="d-btn d-btn-reset" href="#" >重置</a>
+									<a class="d-btn d-btn-sure" href="#" >确定</a>
+								</div>
+					 		</div>
+					 		<div class="dm-occupy-div" >
+					 		</div>
+					 		
+							<ul id="gd">
+								<li class="opened">
+									<a href="#" class="swrap-title">
+										<i class="d-arrow"></i>
+										<span class="d-sidebar-title">价格</span>
+									</a>
+									<div class="d-tab-con d-brand">
+										<ul>
+											<li>
+												<i class="d-tick "></i>
+												<span>1000元以下</span>
+											</li>
+											<li>
+												<i class="d-tick d-checked"></i>
+												<span>1000-1999元</span>
+											</li>
+											<li>
+												<i class="d-tick "></i>
+												<span>2000-2999元</span>
+											</li>
+											<li>
+												<i class="d-tick "></i>
+												<span>3000-4999元</span>
+											</li>
+											<li>
+												<i class="d-tick "></i>
+												<span>5000-9999元</span>
+											</li>
+											<li>
+												<i class="d-tick "></i>
+												<span>10000以上</span>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="">
+									<a href="#" class="swrap-title">
+										<i class="d-arrow"></i>
+										<span class="d-sidebar-title">品牌</span>
+									</a>
+									<div class="d-tab-con d-brand">
+										<ul>
+											<li>
+												<i class="d-tick"></i>
+												<span>NIKE</span>
+											</li>
+											<li>
+												<i class="d-tick d-checked"></i>
+												<span>adidas</span>
+											</li>
+											<li>
+												<i class="d-tick"></i>
+												<span>Jack Jones</span>
+											</li>
+											<li>
+												<i class="d-tick"></i>
+												<span>CONVERSE</span>
+											</li>
+											
+										</ul>
+									</div>
+								</li>
+								<li class="">
+									<a href="#" class="swrap-title">
+										<i class="d-arrow"></i>
+										<span class="d-sidebar-title">商品分类</span>
+									</a>
+									<div class="d-tab-con d-brand">
+										<ul>
+											<li>
+												<i class="d-tick"></i>
+												<span>鞋子</span>
+											</li>
+											<li>
+												<i class="d-tick d-checked"></i>
+												<span>数码设备</span>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+		</nav>
+	</section>
+</div>  
+    
+<!--  筛选滑动切入 E-->
+
+
+
+
+	</body>
+</html>
+
+
+
+

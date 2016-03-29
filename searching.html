@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1" />
+		<!--设置viewport，适应移动设备的显示宽度-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!--隐藏safari导航栏及工具栏-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!--所有浏览器都以最新模式显示-->
+		<title>搜索</title>
+		<link rel="stylesheet" href="css/comm.css">
+		<link href="css/wglobal.css" rel="stylesheet" type="text/css" />
+		<script src='js/jquery-1.9.1.min.js' type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div class="mod_container">
+			<div class="mr_search" >
+				<!--头部搜索框 S-->
+				<div class="top clearfix">
+					<div class="insearch fl" >
+						<input  type="text"/>
+						       <a href="javascript:;" class="hd_search mr_sc"></a>
+						       <span  class="hd_search-del">×</span>
+					</div>
+					<span  class="cancel sou " >搜索</span>
+			 </div>
+			 <!--头部搜索框 E-->
+			 
+			 <!--热门搜索 S-->
+			 <div class="hot_ct">
+				 	<div class="title">
+				 		热门搜索
+				 	</div>
+				 	<div class="tit">
+				 	    <a href="#">凉风衣</a>
+				 	    <a href="#">充电宝</a>
+				 	    <a href="#">春装外套女装</a>
+				 	    <a href="#">凉风衣</a>
+				 	    <a href="#">春装外套女装</a>
+				 	    <a href="#">凉风衣</a>
+				 	    <a href="#">春装外套女装</a>
+				 	    <a href="#">春装外套女装</a>
+				 	    
+				 	</div>
+
+			 </div>
+			 <!--热门搜索 E-->
+			 <!--最近搜索 S-->
+			 <div class="hot_ct rec_ct">
+				 	<div class="title clearfix">
+				 		最近搜索
+				 		<a href="javascript:;" class="fr blue">清除</a>
+
+				 	</div>
+				 	<div class="tit">
+				 	    <a href="#">特斯拉车载套件</a>
+				 	    <a href="#">充电宝</a>
+				 	    <a href="#">春装外套女装</a>
+				 	    
+				 	    
+				 	</div>
+
+			 </div>
+			 <!--最近搜索 E-->
+		</div>
+	</div>
+<script type="text/javascript">
+		$(function(){
+			var del=$('.hd_search-del');
+			del.click(function(){
+				$("input").val("").focus();
+			});
+			del.touchmove(function(){del.css("background-color","#ff0000");});
+			/*del.touchend(function(){del.css("background-color","#808080");});*/
+		})
+</script>
+</body>
+</html>
