@@ -9,28 +9,30 @@
 		<link href="css/comm.css" rel="stylesheet" type="text/css" />
 		<link href="css/wglobal.css" rel="stylesheet" type="text/css" />
 		<link href="css/css2.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/websrcipt.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div class="mod_container">
 			<!-- 内页统一头部 S-->
 				<div class="d-mod d-mod-menu-unfold d-mod-border">
-					<a class="d-mod-back" href="javascript:;"></a>
+					<a class="d-mod-back" href="javascript:;" onclick="history.go(-1)"></a>
 					<div class="d-mod-input d-mod-input-wrapper">
 						<a class="d-mod-search" href="javascript:;"></a>
 						<input type="text" placeholder="世界那么大，我想去看看">
 					</div>
 					<a class="d-mod-menu" href="javascript:;"></a>
-					<div class="d-mod-menu-list" style="display: none;">
-						<a class="d-mod-menu-list-item d-mod-menu-list-item1" href="javascript:;">首页</a>
-						<a class="d-mod-menu-list-item d-mod-menu-list-item2" href="javascript:;">分类</a>
-						<a class="d-mod-menu-list-item d-mod-menu-list-item3" href="javascript:;">购物车</a>
-						<a class="d-mod-menu-list-item d-mod-menu-list-item4" href="javascript:;">我的</a>
+					<div class="d-mod-menu-list">
+						<a class="d-mod-menu-list-item d-mod-menu-list-item1" href="index.html">首页</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item2" href="fl-sort.html">分类</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item3" href="shoppingcart.html">购物车</a>
+						<a class="d-mod-menu-list-item d-mod-menu-list-item4" href="my_index.html">我的</a>
 					</div>
 				</div>
 			<!-- 内页统一头部 E-->
 			<!-- my-index-top 个人中心头部 (背景)S-->
 			<div class="my-index-top">
-				<a href="#" class="intjdd-top dm-top-bg">
+				<a href="my_data.html" class="intjdd-top dm-top-bg">
 					<img src="img/psicon.png"/>
 					<div class="tjdd-top-info info">
 						<span class="jt right my-index-jt"></span>
@@ -39,9 +41,9 @@
 					</div>
 				</a>
 				<ul class="dm-top-menu">
-					<li><a href="#">余额<br/>￥200.00</a></li>
-					<li><a href="#">黄金积分<br/>100.000</a></li>
-					<li><a href="#">米券<br/>￥200.00</a></li>
+					<li><a href="my_balance.html">余额<br/>￥200.00</a></li>
+					<li><a href="my_jf.html">黄金积分<br/>100.000</a></li>
+					<li><a href="my_mq.html">米券<br/>￥200.00</a></li>
 				</ul>
 			</div>
 			<!--my-index-top 个人中心头部 (背景)E-->
@@ -50,7 +52,7 @@
 			<div class="my-index-bottom">
 				<!--  免运费的模块 S-->
 				<div class="my-index-order">
-					<a href="#" class="list">
+					<a href="my_order.html" class="list">
 						<span class="dm-icon my-index-icon my-index-icon1"></span>
 						<span>我的订单</span>
 						<span class="jt dm-list-right"></span>
@@ -59,25 +61,25 @@
 				
 				   <ul class="dm-order-menu">
 				   	    <li>
-				   	    	<a href="#" class="btn menu-btn1">
+				   	    	<a href="my_order.html" class="btn menu-btn1">
 								<span class="dm-icon my-index-menuicon my-index-icon7"></span>
 								<span class="txt">全部</span>
 							</a>
 				   	    </li>
 				   	    <li>
-				   	    	<a href="#" class="btn menu-btn1">
+				   	    	<a href="my_order.html" class="btn menu-btn1">
 								<span class="dm-icon my-index-menuicon my-index-icon8"></span>
 								<span class="txt">待付款<span class="red">(2)</span></span>
 							</a>
 				   	    </li>
 				   	    <li>
-				   	    	<a href="#" class="btn menu-btn1">
+				   	    	<a href="my_order.html" class="btn menu-btn1">
 								<span class="dm-icon my-index-menuicon my-index-icon9"></span>
 								<span class="txt">待收货</span>
 							</a>
 				   	    </li>
 				   	    <li>
-				   	    	<a href="#" class="btn menu-btn1">
+				   	    	<a href="my_order.html" class="btn menu-btn1">
 								<span class="dm-icon my-index-menuicon my-index-icon10"></span>
 								<span class="txt">待评价<span class="red">(2)</span></span>
 							</a>
@@ -85,27 +87,27 @@
 				   </ul>
 				</div>
 				<div class="dm-shop-list">
-					<a href="#" class="list">
+					<a href="my_return.html" class="list">
 						<span class="dm-icon my-index-icon my-index-icon2"></span>
 						<span>我的退换货</span>
 						<span class="jt dm-list-right"></span>
 				   </a>
-				   <a href="#" class="list">
+				   <a href="my_comment.html" class="list">
 					   <span class="dm-icon my-index-icon my-index-icon3"></span>
 						<span>我的评价</span>
 						<span class="jt dm-list-right"></span>
 				   </a>
-				   <a href="#" class="list">
+				   <a href="my-collect.html" class="list">
 					   <span class="dm-icon my-index-icon my-index-icon4"></span>
 						<span>我的收藏</span>
 						<span class="jt dm-list-right"></span>
 				   </a>
-				   <a href="#" class="list list-mg">
+				   <a href="my_partner.html" class="list list-mg">
 					   <span class="dm-icon my-index-icon my-index-icon5"></span>
 						<span>我的团队</span>
 						<span class="jt dm-list-right"></span>
 				   </a>
-				   <a href="#" class="list list-mg">
+				   <a href="my_set.html" class="list list-mg">
 					   <span class="dm-icon my-index-icon my-index-icon6"></span>
 						<span>设置</span>
 						<span class="jt dm-list-right"></span>

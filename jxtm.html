@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="apple-mobile-web-app-capable" content="yes"/><!--隐藏safari导航栏及工具栏-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="js/websrcipt.js" ></script>
 		<script type="text/javascript" src="js/hhSwipe.js" ></script>
 		<script type="text/javascript" src="js/swiper.min.js" ></script>
@@ -20,7 +21,7 @@
 			<div class="index-set">
 				<!-- 内页统一头部 -->
 				<div class="d-mod d-mod-menu-unfold">
-					<a class="d-mod-back" href="javascript:;"></a>
+					<a class="d-mod-back" onclick="history.go(-1)"></a>
 					<div class="d-mod-input d-mod-input-wrapper">
 						<a class="d-mod-search" href="javascript:;"></a>
 						<input type="text" placeholder="世界那么大，我想去看看">

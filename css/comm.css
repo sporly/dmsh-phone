@@ -557,20 +557,17 @@ box-sizing: border-box;
     background-position: -311px -2px;
 }
 .d-mod-menu-list{
-    width: 125px;
     position: absolute;
     top: 50px;
     right: 0;
+    display: none;
+    width: 125px;
     background: #f7f7f7;
     z-index: 10;
     display: none;
     box-shadow:-3px 3px 3px #d1d0d0;
     -webkit-box-shadow:-3px 3px 3px rgba(0,0,0,0.4);
     -moz-box-shadow:-3px 3px 3px #d1d0d0;
-
-}
-.d-mod-menu-unfold .d-mod-menu-list {
-    display: block;
 }
 .d-mod-menu-list-item{
     width: 100%;
