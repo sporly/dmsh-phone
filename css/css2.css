@@ -1083,7 +1083,7 @@
 }
 .d-sidebar-title {
 	display: block;
-	float: left;
+	/*float: left;*/
 	padding-left: 12px;
 	font-size: 16px;
 }
