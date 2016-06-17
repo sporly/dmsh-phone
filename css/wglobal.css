@@ -1279,6 +1279,9 @@ ul.boxright {
 .my-grade-container-wraper{
 	background: #fff;
 }
+.my-sign-container-wraper{
+	background: #fff;
+}
 .my-sign-top{
 	width:100%;
 	height:auto;
@@ -1287,6 +1290,7 @@ ul.boxright {
 	position: relative;
 	padding:17px 14px;
 	border-top:1px #e5e5e5 solid;
+	border-bottom:1px #e5e5e5 solid;
 	background: #fff4ad;
 	display: -webkit-box;
 	display: -moz-box;
