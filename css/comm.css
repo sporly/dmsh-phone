@@ -201,7 +201,7 @@ input,button,select,textarea{
     -webkit-transition: all 0.1s ease-in;
     transition: all 0.1s ease-in;
     width: 60px;
-    height: 12px;
+    height: 30px;
     vertical-align: middle;
 }
 
@@ -253,7 +253,7 @@ input,button,select,textarea{
 [id^="checkbox-10-"]:checked + label:before {
     content: ' ';
     position: absolute;
-    left: 49px;
+    left: 31px;
     border-radius: 100px;
 }
 
@@ -842,7 +842,7 @@ ul.boxright {
 }
 .number-jian{
     line-height:32px;
-    color: #808080;
+   /* color: #808080;*/
 }
 .numberinput{
     width: 70px;

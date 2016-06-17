@@ -9,11 +9,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="apple-mobile-web-app-capable" content="yes"/><!--隐藏safari导航栏及工具栏-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-		<script type="text/javascript" src="js/websrcipt.js" ></script>
-		<script type="text/javascript" src="js/hhSwipe.js" ></script>
-		<script type="text/javascript" src="js/swiper.min.js" ></script>
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="js/easyResponsiveTabs.js"></script>
+		<script src="js/jquery.simplesidebar.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/websrcipt.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		
 	</head>
 	<style>
 
@@ -92,7 +92,7 @@
 							<div class="make-wraptext">分享</div>
 						</a>
 					</div>
-					<div class="d-linklist">
+					<div class="d-linklist" id="open-sb">
 						<a class="item" onclick="" href="#">
 							规格
 							<span class="parameter">
@@ -107,19 +107,19 @@
 
 				<div class="details-mode">
 					<div class="d-linklist noborder">
-						<a class="item" onclick="" href="#">
+						<a class="item" onclick="" href="product-detailxq.html">
 							图文详情
 							<i class="arrowent"></i>
 						</a>
 					</div>
 					<div class="d-linklist noborder">
-						<a class="item" onclick="" href="#">
+						<a class="item" onclick="" href="product-detailcs.html">
 							商品参数
 							<i class="arrowent"></i>
 						</a>
 					</div>
 					<div class="d-linklist">
-						<a class="item" onclick="" href="#">
+						<a class="item" onclick="" href="product-detailpj.html">
 							商品评价
 							<i class="arrowent"></i>
 						</a>
@@ -128,7 +128,7 @@
 
 				<div class="details-mode">
 					<div class="d-linklist">
-						<a class="item" onclick="" href="#">
+						<a class="item" onclick="" href="shop-index.html">
 							威尔胜Wilson旗舰店
 							<span class="d-shop-stars">
 								<i class="d-rec-star star2"></i>
@@ -156,10 +156,11 @@
 		</div>
 
 		<!-- 弹出框 begin -->
-	<div class="d-tab-content" id="" style="display:none;">
+<div class="wrapper">
+	<div class="d-tab-content sidebar" id="" style="display: none;">
 		<div class="d-tab-pane active">
 			<div class="screening-box">
-				<div class="sidebar-content">
+				<div class="sidebar-content sidebar-contentw">
 					<div class="detail-content">
 						<p class="d-detpic">
 							<img src="img/detimg.png">
@@ -215,6 +216,7 @@
 			<div class="black">
 			</div>
 		</div>
+	</div>
 	</div>
 	    <!-- 弹出框 end -->
 
