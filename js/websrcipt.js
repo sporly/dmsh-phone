@@ -131,6 +131,14 @@ $(function(){
 	   });
    })
    /*菜单的出现于隐藏 E*/
+  
+  /*点击搜索调到搜索页面 S*/
+   $(function(){
+   	   $('.d-mod-input').click(function(){
+   	   	   window.location.href="search_mr.html";
+   	   });
+   })
+  /*点击搜索调到搜索页面 E*/
 
 	/*固定在窗口顶部  S*/
 	/*var topm = $('.stick-tittle').offset().top;

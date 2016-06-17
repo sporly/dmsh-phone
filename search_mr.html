@@ -20,14 +20,15 @@
 				<!--头部搜索框 S-->
 				<div class="top ">
 					<div class="insearch " >
-						<input  type="text"/>
+						<input  type="text" class="search" id="search_input"/>
 					    <a href="javascript:;" class="hd_search mr_sc"></a>
 					    <span  class="hd_search-del">×</span>
 					</div>
-					<span class="cancel" >取消</span>
+					<span class="cancel" id="search_box" onclick="history.go(-1)">取消</span>
 			 </div>
 			 <!--头部搜索框 E-->
-			 
+
+        
 			 <!--热门搜索 S-->
 			 <div class="hot_ct">
 				 	<div class="title">
@@ -59,21 +60,44 @@
 			 <!--最近搜索 E-->
 		 </div>
 	</div>
-	<script>
+	<script type="text/javascript">
+    $(function(){
+        $('.search').each(function(){	
+			$("#search_box").text('取消').removeClass('sou');
+			$(".search").val("").focus();
+		});
+        $('.search').keyup(function(){	
+			if(!$(this).val()==""){
+				$("#search_box").text('搜索').addClass('sou');
+				
+			}else{
+				$("#search_box").text('取消').removeClass('sou');
+				$("#search_box").addAttr("onclick='history.go(-1)'");
+			}
+		});
 
-		$(function() {
-			var del = $('.hd_search-del');
-			del.click(function () {
-				$("input").val("").focus();
-			});
-			del.mouseover(function () {
-				del.css("background-color", "#ff0000");
-			});
-			del.mouseout(function () {
-				del.css("background-color", "#808080");
-			});
-		})
-	</script>
+        /* 搜索按钮href赋值 也可以用post submit提交*/
+		        $("#search_input").blur(function(){
+		        	if(!$(this).val()==""){
+		        		$("#search_box").removeAttr('onclick');
+			            var val_search_input = $("#search_input").val();
+			            /*$("#search_box").attr("href", "search?search_input="+val_search_input);*/
+		           }
+		        });
+
+        /* 点击×清空内容 S*/
+        var del=$('.hd_search-del');
+        $(".search").keyup(function(){
+            del.show();
+        });
+
+        del.click(function(){
+            $(".search").val("").focus();
+            $(this).hide();
+           /*$("#search_box").text('取消').removeClass('sou')*/
+        });
+    });
+</script>
 </body>
 
 </html>

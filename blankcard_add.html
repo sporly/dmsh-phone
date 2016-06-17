@@ -43,6 +43,7 @@
 									<input type="text" placeholder="请输入开户人姓名"/>
 								</div>
 							</div>
+							<div class="valid-text"></div>
 						</div>
 					 
 						 <div class="input-box-wrap">
@@ -50,14 +51,20 @@
 								<label class="b-card-txt">开户银行</label>
 								<div class="in-input-box">	
 									<select>
-										  <option value ="volvo" selected = "selected">请选择</option>
-										  <option value ="saab">Saab</option>
-										  <option value="opel">Opel</option>
-										  <option value="audi">Audi</option>
+										  <option value ="请选择" selected = "selected">请选择</option>
+										  <option value ="中国人民银行">中国人民银行</option>
+										  <option value="工商银行">工商银行</option>
+										  <option value="农业银行">农业银行</option>
+										  <option value="中国银行">中国银行</option>
+										  <option value="建设银行">建设银行</option>
+										  <option value="交通银行">交通银行</option>
+										  <option value="招商银行">招商银行</option>
+										  <option value="兴业银行">兴业银行</option>
 									</select>
 									<span class="jt"></span>
 								</div>
 							</div>
+							<div class="valid-text"></div>
 						</div>
 						
 						<div class="input-box-wrap">
@@ -67,16 +74,17 @@
 									<input type="text" placeholder="请输入开户支行名称"/>
 								</div>
 							</div>
+							<div class="valid-text"></div>
 						</div>
 						
 						<div class="input-box-wrap">
 							<div class="input-box">
 								<label class="b-card-txt">银行卡号</label>
 								<div class="in-input-box">	
-									<input type="text" placeholder="请输入银行卡号"/>
+									<input class="card" type="text" placeholder="请输入银行卡号"/>
 								</div>
 							</div>
-							<div class="valid-text">您输入的卡号有误，请重新输入！</div>
+							<div class="valid-text"></div>
 						</div>
 						<div class="mq-list-line clearfix b-card-list-line">
 							<div class="mq-list-line-pl">
@@ -95,5 +103,78 @@
 				 </div>
 			</div>
   </div>
+  <script type="text/javascript">
+  	 /*form S*/
+       $(function(){
+   	     	/**表单验证 S**/
+   	     	    var inputp = $('.input-box input');
+					
+				/*获得焦点删除提示 S*/
+				inputp.focus(function() {
+					$(this).parents('.input-box').next('.valid-text').hide();
+				});
+				$('.in-input-box select').change(function(){
+					$(this).parents('.input-box').next('.valid-text').hide();
+				});
+				/*点提交按钮提示 S*/
+				$(".b-card-btn a").click(function() {
+					var bool_sub = true;
+					var re = /^(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}$/,
+					    pa = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/,
+					    id =/^(\d{15}$|^\d{18}$|^\d{17}(\d|X|x))$/,
+					    ca = /^(\d{16}|\d{19})$/;
+					var phone=$('.z-phone').val(),
+					    passwords=$('.z-password').val(),
+					    bodyid=$('.bodyid').val(),
+					    card=$('.card').val(),
+					    credit=$('.credit').val(),
+					    checks=$('.dm-checkbox label');
+					    
+					function showErr(ele,texts){
+						ele.parents('.input-box').next('.valid-text').text(texts).show();
+					    bool_sub = false;
+					}
+					if (!re.test(phone)) {
+						   showErr($('.z-phone'),"请填写正确手机号");
+				     }
+				    if (!pa.test(passwords)) {
+					    showErr($('.z-password'),"请填写6-12位数字、字母组成的密码");
+				     }
+				    if (!id.test(bodyid)) {
+					    showErr($('.bodyid'),"请输入正确的身份证号");
+				     }
+				    if (!ca.test(card)) {
+					    showErr($('.card'),"请输入正确的银行卡卡号");
+				    }
+				     if (!ca.test(credit)) {
+					    showErr($('.credit'),"请输入正确的信用卡卡号");
+				    }
+				    if (!checks.hasClass('checked')) {
+					    checks.parents('.b-phone-check').next('.valid-text').text('请同意用户协议').show();
+					    bool_sub = false;
+				    }
+				    
+				    var seval=$('.in-input-box select').val();
+				    
+				    if(seval=="请选择"){
+				    	var itemtext=$('.in-input-box select').parent('.in-input-box').prev().text();
+							showErr($('.in-input-box select'),itemtext+"不能为空");
+				    }
+					inputp.each(function() {
+						if ($(this).val() == "") {
+							var itemtext=$(this).parent('.in-input-box').prev().text();
+							showErr($(this),itemtext+"不能为空");
+						}
+					});
+					if($('.tjr input').val()==""){
+						$('.tjr input').parents('.input-box').next('.valid-text').hide();
+					}
+					return bool_sub;
+				});
+				/*点提交按钮提示 E*/
+			/**表单验证 E**/
+   	     })
+    /*form E*/
+  </script>
 	</body>
 </html>
