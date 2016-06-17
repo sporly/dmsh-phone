@@ -1859,6 +1859,7 @@ ul.boxright {
 	text-align: center;
 	display: block;
 	color:#fff;
+	font-size: 12px;
 }
 .my-index-bottom{
 	margin-top: 10px;
@@ -1979,6 +1980,7 @@ ul.boxright {
 .dm-order-menu .txt{
 	display: inline-block;
 	margin-top: 4px;
+	font-size: 12px;
 }
 .dm-order-menu .txt .red{
 	color:#ff0000;
