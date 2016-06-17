@@ -1010,6 +1010,10 @@ ul.boxright {
   position: absolute;
   top: 22px;
   left: 14px;
+  width:73px;
+  height: 73px;
+  background: url(../img/address-bg.png) no-repeat;
+  background-position: center -417px;
 }
 /*.ddzf-top-icon .address-bg{
   background-position: center -236px;
@@ -1048,9 +1052,9 @@ ul.boxright {
 	border-bottom:1px solid #e5e5e5 ;
 }
 .ddzf-btn{
-	height: 42px;
-	line-height: 42px;
-	padding:10px 000;
+	height: 58px;
+	line-height: 58px;
+	padding:10px 0;
 }
 .ddzf-btn a{
 	height: 38px;
