@@ -383,6 +383,7 @@ box-sizing: border-box;
     height: auto;
     margin: 0 auto;
     /*overflow-x: hidden;*/
+   padding-top: 50px;
 }
 .index-set{
     /*background: #f7f7f7;*/
