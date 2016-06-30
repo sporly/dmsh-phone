@@ -726,11 +726,14 @@
 /*分类左边*/
 
 .d-classification {
-	height: auto;
+	float:left;
+	height: 100%;
 	min-height: 100%;
-	display: -webkit-box;
+	/*display: -webkit-box;*/
+	position: fixed;
 }
 .d-category-tab {
+	float:left;
 	width: 89px;
 	box-sizing: border-box;
 	z-index: 1;
@@ -739,6 +742,17 @@
 	background: #f0f0f0;
 	border-left: 1px solid #e5e5e5;
 	border-right: 1px solid #e5e5e5;
+	
+	overflow:auto;
+ height:100%;
+　scrollbar-face-color:#f60;
+　scrollbar-highlight-color:#F60;
+　scrollbar-3dlight-color:#f60;
+　scrollbar-darkshadow-color:#f60;
+　scrollbar-Shadow-color:#f60;
+　scrollbar-arrow-color:#000;
+　scrollbar-track-color:#fff;}
+	
 }
 .resp-tabs-list {
 	width: 90px;
@@ -765,10 +779,25 @@
 	-webkit-box-flex: 1;
 	padding: 0 11px 0 13px;
 	background: #fff;
+	
+	
+	overflow:auto; 
+	height:100%;
+　scrollbar-face-color:#f60;
+　scrollbar-highlight-color:#F60;
+　scrollbar-3dlight-color:#f60;
+　scrollbar-darkshadow-color:#f60;
+　scrollbar-Shadow-color:#f60;
+　scrollbar-arrow-color:#000;
+　scrollbar-track-color:#fff;
+
+	
 }
 .resp-tab-content {
+	
 	display: none;
 	position: relative;
+	
 }
 .d-tabs-sort {
 	padding-bottom: 0.2rem;
